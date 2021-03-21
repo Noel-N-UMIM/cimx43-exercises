@@ -1,0 +1,21 @@
+body {
+    background-color: grey;
+    margin: 0 auto;
+        font-family: 'Josefin Sans', sans-serif;
+  }
+.container{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  gap: 0px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+  /*   background-color: #ec3838; */
+  background-color: rgb(30, 161, 25);
+  padding: 0 auto;
+}
+.TextGrid {
+    grid-column: 2/3;
+    /* grid-row: 1/3; */
+  
+}
