@@ -1,7 +1,10 @@
 body {
-    background-color: grey;
+    background-color: rgb(228, 228, 228);
     margin: 0 auto;
         font-family: 'Josefin Sans', sans-serif;
+  }
+  h2{
+    font-size: .75rem;
   }
 .Container{
     display: grid;
@@ -29,10 +32,11 @@ a {
   font-size: 1rem;
   text-decoration: none;
   color: #1e1f23;
+  line-height: 1.25rem;
   
 }
   .fun-hover {
-    background-image: linear-gradient(to right, transparent 50%, #5e8dc2 50%);
+    background-image: linear-gradient(to right, transparent 50%, #ffcc6c 50%);
     background-position: 0;
     background-size: 200%;
     transition: all 0.6s;
@@ -45,13 +49,9 @@ font-size: 1.02rem;
 
 
 /* ---------------Section 2 of the poem ----------------*/
-/* .animated2{
 
-  float: left; 
-
- }     */
 .fun-hover2 {
-    background-image: linear-gradient(to right, transparent 50%, #eba86a 50%);
+    background-image: linear-gradient(to right, transparent 50%, #4ee4ff 50%);
     background-position: 0;
     background-size: 200%;
     transition: all 0.8s;
@@ -63,13 +63,9 @@ background-position: -100%;
 font-size: 1.02rem;
 }
 /* ---------------Section 3 of the poem ----------------*/
-/* .animated3{
 
-  float: left; 
-
- }  */
 .fun-hover3 {
-  background-image: linear-gradient(to right, transparent 50%, #3bb6cc 50%);
+  background-image: linear-gradient(to right, transparent 50%, #ffcc6c 50%);
   background-position: 0;
   background-size: 200%;
   transition: all 0.6s;
@@ -80,13 +76,9 @@ background-position: -100%;
 font-size: 1.02rem;
 }
 /* ---------------Section 4 of the poem ----------------*/
-/* .animated4{
 
-  float: left; 
-
- }  */
 .fun-hover4 {
-  background-image: linear-gradient(to right, transparent 50%, #cc3b3b 50%);
+  background-image: linear-gradient(to right, transparent 50%, #4ee4ff 50%);
   background-position: 0;
   background-size: 200%;
   transition: all 0.6s;
