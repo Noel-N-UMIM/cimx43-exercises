@@ -3,7 +3,7 @@ body {
     margin: 0 auto;
         font-family: 'Josefin Sans', sans-serif;
   }
-.container{
+.Container{
     display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
@@ -13,6 +13,17 @@ body {
   /*   background-color: #ec3838; */
   background-color: rgb(30, 161, 25);
   padding: 0 auto;
+}
+.animated1{
+    /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  gap: 0px;
+  grid-auto-rows: minmax(100px, auto); */
+  align-items: left;
+  
+  background-color: rgb(98, 74, 184);
+  /* padding: 0 auto; */
 }
 .TextGrid {
     grid-column: 2/3;
