@@ -25,13 +25,82 @@
     
         <div class = "text1">"dlgndjfdgdnglknslnslfbsljbjsblj vljv ljvlknlknlknlkdnglkdnfglndglndfglndflgn</div>
             <div class ="Image_1"><img src="https://i.postimg.cc/Wb5QTYX3/image-350x350.png"></div>
-            <div class = "calculator"></div>
+            <div class = "calculator">
+                
+                    <p>
+                        Desired Annual Salary: <input
+                        id="salary"
+                        type="number"
+                        min="0"
+                        max="5000000"
+                        step="1000"
+                        onchange="CalcDayRate()"
+                        >
+                        </p>  
+                    <p>
+                        Annual Expenses: <input
+                        id="expenses"
+                        type="number"
+                        min="0"
+                        max="1000000"
+                        step="10"
+                        onchange="CalcDayRate()"
+                        >
+                        </p>  
+                       Day Rate = $ <h2 id="day_Rate"></h2>
+<p>
+    Days to Complete Work: <input
+    id="days"
+    type="number"
+    min="1"
+    max="2190"
+    step="1"
+    onchange="CalcJobPrice()"
+    >
+    </p>  
+    <h2 id="job_Price"></h2>     
+
+    <p>
+        LoanAmount: $<input
+          id="amount"
+          type="number"
+          min="1"
+          max="1000000"
+          onchange="computeLoan()"
+        />
+      </p>
+      <p>
+        Interest Rate:
+        <input
+          id="interest_rate"
+          type="number"
+          min="0"
+          max="100"
+          value="10"
+          step=".1"
+          onchange="computeLoan()"
+        />
+      </p>
+      <p>
+        Months:
+        <input
+          id="months"
+          type="number"
+          min="1"
+          max="72"
+          value="1"
+          step="1"
+          onchange="computeLoan()"
+        />
+      </p>
+      <h2 id="payment"></h2>
+  
+                   
+            </div>
       
     </div>
 
-
+    <script src="JS/Calculator.js"></script>
 </body>
-<footer>
 
-</footer>
 </html>
