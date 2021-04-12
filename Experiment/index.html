@@ -7,20 +7,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Non-Starving Artist</title>
+    <title>The Not-So-Starving Artist</title>
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
-    
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Spartan:wght@500&display=swap" rel="stylesheet"> </head>
 
 <body>
+    <nav>
+        <!-- TODO have title name and menu in a row across from each other   -->
+
+        <div class="menu_container">
+
+            <nav class="menu">
+                <div class="logo"><img src="https://i.postimg.cc/nLKPjfmz/Logo1.png"></div>
+                <a href="#Home">Home </a>
+                <a href="#About">About the Studio</a>
+                <a href="#Process">The Animation Process</a>
+                <a href="#Gallery">Studio Gallery</a>
+
+        </div>
+
+    </nav>
+    <div class="wrapper">
+
+
+
+        <header>
+        </header>
+
+        <!--    -----------Main Title Goes Here---------- -->
+        <section>
+            <div><a name="Home"></div>
+            <br>
+            <!-- <h1 class="title">Welcome to<br>
+                An Animation Production Studio</h1> -->
+            
+            <!--------@@ Parallax Image Here ------->
+            <div class="Hero_Image"><img src="https://i.postimg.cc/bNCjtcBk/atelier-banner.jpg">
+                <div class="centered">
+                    <h1>The Not-So-Starving Artist</h1>
+
+                    <!-- <h2>A Simple Calculator to Quickly Price Your Work</h2> -->
+                </div>
+            </div>
+            <div class="subtitle">A Simple Calculator to Quickly Price Your Work</div>
+            <div><a name="About"></div>
+
+
+        <section>
+            <!-- @@Grid Area 2fr columns, 2fr rows: text on left, image on right, calculator underneath --> 
+
+            <div class="Grid_2_Container">
+                <div class="calculator_salary"><strong><h2>Salary</h2></strong><br>Enter your desired annual salary:</div>
+                <br>
+                <div class="calculator_expenses"><strong><h2>Expenses (Yearly)</h2></strong><br>
+                Ex: software licenses, overhead cots, and materials.</div>
+                <div class="calculator_rate">
+                    <h2> Day Rate </h2>
+                </div>
+
+                <div class="input_salary"><input id="salary" type="number" min="0" max="5000000" step="1000"
+                        onchange="CalcDayRate()">
+                </div>
+
+
+                <div class="input_expenses">
+                    <input id="expenses" type="number" min="0" max="1000000" step="10" onchange="CalcDayRate()">
+                </div>
+
+                <div class="input_rate">
+                    <h2>
+                        <div id="day_Rate"></div>
+                    </h2>
+                </div>
+                </div>
+                <!-- --------Days to Complete Project---- -->
+               <div class = "Grid_3_Container">
+                <div class="calculator_Days"><strong><h2>Scope of Project</h2></strong><br>How many days will the project take to complete?</div>
+                <div class="calculator_Price"><h2><color #c42d2d>Project Cost</color></h2></div>
+                
+                <div class="input_Days"><input id="days" type="number" min="1" max="2190" step="1" onchange="CalcDayRate()"></div>
+        
+        <div class="input_Price"><h2 id="job_Price"></h2></div>
+            </div>
+</section>
+<section>
     
-    <!-- @@Hero Image should span across the full width -->
+    <div class="StoryImageGrid">
+
+    </div>
+
+    <div class="StoryGrid">
+        <div class="col1Story">
+            <h3>STUDIO STORY</h3>
+        </div>
+        <div class="col1">
+            Hello! My name is Yesnid E. Tlaw, and I am the founder of this studio, an animation and production
+            brand. My team’s work typically incorporates traditional illustration, clean linework, computer
+            design, and bright colors. You can see our handiwork playing on most online streaming platforms and
+            on physical media as well as on our online shop. We also offer an extensive portfolio of characters
+            that are available for licensing.<p>
+        </div>
+        <div class="col2"><img src="https://i.postimg.cc/zGBcZypR/office-350x350.jpg"></div>
+    </div>
+</section>
+
+        <div><a name="Process"></div>
+        <section>
+            <!--       <div class="parallax_1"></div> -->
+
+            <div><a name="Gallery"></div>
+            <br>
+            <br>
+            <h2>
+                <p>Gallery of Our Studio</p>
+            </h2>
+            <div class="StudioGallery1">
+
+                <div class="img1"><img src="https://i.postimg.cc/mDwG7F00/gallery-0001.jpg" alt=""></div>
+                <div class="img2"><img src="https://i.postimg.cc/Wz1c81Vt/gallery-0002.jpg" alt=""></div>
+                <div class="img3"><img src="https://i.postimg.cc/vm7RdVHc/gallery-0003.jpg" alt=""></div>
+                <div class="img6"><img src="https://i.postimg.cc/6qbJmx6c/gallery-0006.jpg" alt=""></div>
+                <div class="img5"><img src="https://i.postimg.cc/25NpJwYs/gallery-0005.jpg" alt="">
+                </div>
+            </div>
+            <section>
+                <div class="parallax_2"></div>
+                <div class="StudioGallery2">
+                    <div class="img4"><img src="https://i.postimg.cc/X7h6KWz7/gallery-0004.jpg" alt=""></div>
+                    <div class="img8"><img src="https://i.postimg.cc/J7pLnZ3X/gallery-0008.jpg" alt=""></div>
+                    <div class="img7"><img src="https://i.postimg.cc/TYhXW1Q4/gallery-0007.jpg" alt=""></div>
+                    <div class="img9"><img src="https://i.postimg.cc/NjHqpn38/gallery-0009.jpg" alt=""></div>
+            </section>
+            <!--         </div>
+            <div class="StudioGallery2"> -->
+
+    </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+    </div>
+    </main>
+
+    <script src="JS/Calculator.js"></script>
+</body>
+
+</html>
+<!-- <body>
+    
+    @@Hero Image should span across the full width
     <div class = "Section_Banner"><br></div>
-    <div class="hero_container">
-        <!-- <img src="https://i.postimg.cc/MHGQSLrx/Hero-image-1000x350.png" alt="title_image"> -->
-        <div class="centered">
+    <div class="hero_container"> -->
+<!-- <img src="https://i.postimg.cc/MHGQSLrx/Hero-image-1000x350.png" alt="title_image"> -->
+<!-- <div class="centered">
             <h1>The Non-Starving Artist</h1>
             <h2>A Simple Guide to Pricing Your Work</h2>
         </div>
@@ -32,14 +174,14 @@
             <div class="text1">"dlgndjfdgdnglknslnslfbsljbjsblj vljv
                 <p> ljvlknlknlknlkdnglkdnfglndglndfglndflgn</p></div>
             <div class="Image_1"><img src="https://i.postimg.cc/Wb5QTYX3/image-350x350.png"></div>
-        </div>
-
-   
+        </div> -->
 
 
-    <!-- @@Grid Area 2fr columns, 2fr rows: text on left, image on right, calculator underneath -->
-    
-    <br>
+
+
+<!-- @@Grid Area 2fr columns, 2fr rows: text on left, image on right, calculator underneath -->
+
+<!-- <br>
     <div class="Grid_2_Container">
         <div class="calculator_salary">Desired Annual Salary:</div>
         <div class="calculator_expenses">Annual Expenses:</div>
@@ -89,4 +231,4 @@
     <script src="JS/Calculator.js"></script>
 </body>
 
-</html>
+</html> -->

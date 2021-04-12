@@ -1,4 +1,484 @@
-body{
+body {
+    background-color: grey;
+    margin: 0 auto;
+                font-family: 'Spartan', sans-serif;
+  }
+  a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Paytone One', sans-serif;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  nav a:hover {
+    color: #f7c27d;
+  }
+  a: visted {
+    color: grey;
+  }
+  .menu_container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #4d726f;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    margin: auto;
+  }
+  .menu {
+    margin-left: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+  }
+  .logo {
+    width: 100px;
+    /*   padding: 20px 0 20px 20px; */
+  }
+  .title {
+    text-align: center;
+    margin: 0px auto;
+    padding: 15px 0px 0px 0px;
+    font-size: 50px;
+    font-family: "Cinzel Decorative", cursive;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 25px;
+    color: #b95c38;
+    margin: 0px auto;
+      padding: 25px 0px 25px 0px;
+  
+  }
+  h1 {
+    
+    font-size:60px;
+    color: black;
+    font-family: 'Paytone One', sans-serif;
+
+  }
+  h2 {
+    /* text-align: center; */
+    font-size: 25px;
+    
+    /* color: #ec3838; */
+
+  
+  }
+  h3 {
+    text-align: left;
+    font-size: 15px;
+    color: black;
+  
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .Separator {
+    display: grid;
+    grid-template-columns: 6fr;
+    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper {
+    background: white;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0px;
+    overflow: auto;
+  }
+  .parallax_1 {
+    background-image: url("https://1.bp.blogspot.com/-umH1yHYxo2g/XNnDU6--gAI/AAAAAAAAABs/w-LMdSVsVDkM8UboSRY2odjgG_8xRsVzACK4BGAYYCw/w1600/backdrop_optimized.jpg");
+    
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.Hero_Image {
+    position: relative;
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+
+  }  
+  .centered {
+    text-align: center;
+    position: absolute;
+    display: inline;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; 
+    margin: 50px 0 0 0;
+  }
+  .parallax_2 {
+    background-image: url("https://i.postimg.cc/hPXY1TMg/graph-editor2.jpg");
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .StoryImageGrid {
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 1fr;
+    margin: 50px 0 0 0;
+    /*   gap: 40px; */
+    grid-auto-rows: minmax(10px, auto);
+    /*   align-items: left; */
+    background-color: #ffa75f;
+    padding: 50px 0 50px 0;
+    /*   align-content: end; */
+  }
+  .StoryImage {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .StoryGrid {
+    display: grid;
+    grid-template-columns: auto 60% 40px 20% auto;
+    grid-template-rows: 1fr, 1fr;
+    margin: 0 auto;
+    grid-auto-rows: minmax(10px, auto);
+    
+    background-color: #ffa75f;
+    padding: 0px 10% 50px 10%;
+    /*   align-content: end; */
+  }
+  .col1Story {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-items: left;
+   
+  }
+  .col1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: rgb(30, 31, 30);
+    align-items: left;
+  }
+
+   /* -----------Grid 2  Day Rate Calculator---------- */
+   .Grid_2_Container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    margin: 0 auto;
+    max-width: 600px;
+    align-items: left;
+    justify-content: left;
+    background-color: #b9c4c2;
+    padding: 20px 40px 0 40px;
+    align-items: start; 
+  }
+
+ .calculator_salary{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+
+    
+ }
+.calculator_expenses{
+   grid-column: 1/2;
+   grid-row: 2/3;
+}
+.calculator_rate{
+   grid-column: 1/2;
+   grid-row: 3/4;
+   text-align: right;
+}
+
+.input_salary{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+    
+}
+.input_expenses{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: right;
+}
+.input_rate{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: left;
+} 
+
+.Grid_3_Container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr, 1fr,;
+    row-gap: 25px;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #c5d7e7;
+    padding: 10px 40px;
+     align-content: center; 
+     
+  }
+  .calculator_Days{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+}
+.calculator_Price{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: right;
+}
+
+.input_Days{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+}
+.input_Price{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: left;
+}
+  .col2 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    color: white;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .StudioGallery1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    /*   background-color: #ec3838; */
+    background-color: white;
+    padding: 0 auto;
+  }
+  .StudioGallery1 img {
+    width: 100%;
+    height: auto;
+  }
+  .img5 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+  }
+  .img5:hover {
+    /*   opacity: 1; */
+    /* /*     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; */
+    opacity: 1;
+    transition: 0.5s ease;
+    background-color: #008cba;
+  }
+  
+  .StudioGallery2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  
+    margin: 0 auto;
+    gap: 0px;
+    /*   grid-auto-rows: minmax(100px, auto); */
+    align-items: center;
+    background-color: #ec3838;
+    padding: 40px;
+  }
+  .StudioGallery2 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .grid_container_Process {
+    display: grid;
+    grid-template-columns: auto 70% auto;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+    margin: 0 50px;
+  }
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .ProcessVideo {
+    grid-column: 2/3;
+    grid-row: auto;
+  }
+  footer {
+    padding: 0 0 100px 0;
+    background-color:black;
+  }
+  
+  /* --------Media Queries ------- */
+  @media only screen and (max-width: 800px) {
+    .a:link {
+      font-size:10px;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .title {
+      font-size: 20px;
+    }
+     .subtitle {
+      font-size: 20px;
+    }
+    .logo {
+      display: none;
+    }
+    .menu {
+      margin-left: 10px;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      padding: 7px 0;
+    }
+    .StudioGallery1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 5fr;
+      margin: 0 auto;
+      gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
+      align-items: center;
+      background-color: #1eb298;
+      padding: 40px;
+    }
+    .img5 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+    .StudioGallery img {
+      width: 100%;
+      height: auto;
+    }
+    .StoryImageGrid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin: 0 auto;
+      gap: 40px;
+      grid-auto-rows: minmax(10px, auto);
+      align-items: left;
+      background-color: #ec3838;
+      padding: 20px 20px;
+      align-content: end;
+    }
+    .StoryImage {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    .StoryGrid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr, 1fr, 1fr;
+      margin: 0 auto;
+      grid-auto-rows: minmax(20px, auto);
+      align-items: left;
+      background-color: #1eb298;
+      padding: 20px 20px;
+      align-content: end;
+    }
+    .col1Story {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      color: black;
+      
+    }
+    .col1 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      color: black;
+    }
+    .col2 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      color: black;
+    }
+    
+
+    .grid_container_Process {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      column-gap: 20px;
+      row-gap: 30px;
+      margin: 0 50px;
+    }
+    .ProcessVideo {
+      grid-column: 1/2;
+      grid-row: auto;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
     margin: 0 auto;
     background-color: rgb(192, 89, 89);
     color: rgb(0, 0, 0);
@@ -21,14 +501,14 @@ h2{
     font-size: 20px;
 }
 /*-------------- Centered text in the Hero Image*/
-.hero_container {
+/* .hero_container {
     padding: 400px 0 0 0;
         background-image: url("https://i.postimg.cc/MHGQSLrx/Hero-image-1000x350.png");
         max-height: 350px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
     /* width:100%; */
     /* height: auto; */
     
@@ -36,7 +516,7 @@ h2{
     /* text-align: center; */
     
     
-  }
+  /* }
   
   .centered {
     text-align: center;
@@ -45,18 +525,19 @@ h2{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: black; */
   }
   /* -------------Main content Goes in Here------------- */
 
   /*--------------- Grid 1  Text and Image */
   
-  .Grid_1{
+  /* .Grid_1{
     display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
-  margin: 40px 0 0 40px;
+  margin: 40px 20px 0 40px;
   padding: 0 auto;
+  
 }
 .text1 {
   grid-column: 1/2;
@@ -71,9 +552,9 @@ h2{
   align-items: center;
   justify-content: center;
 
- }
+ } */
  /* -----------Grid 2  Day Rate Calculator---------- */
- .Grid_2_Container{
+ /* .Grid_2_Container{
     width:100%;
     height:auto;
     max-width: 800px;
@@ -81,9 +562,9 @@ h2{
 grid-template-columns: 40% 60%;
 grid-template-rows: 3fr;
 margin: 0 auto;
-gap: 0px;
+gap: 0px; */
 /* grid-auto-rows: minmax(100px, auto); */
-align-items: left;
+/* align-items: left;
 justify-content: left;
 padding: 0 auto;
 }
@@ -110,4 +591,4 @@ padding: 0 auto;
 .input_rate{
     grid-column: 2/3;
     grid-row: 3/4;
-}
+} */
