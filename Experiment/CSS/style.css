@@ -56,8 +56,6 @@ body {
   }
   .subtitle {
     text-align: center;
-    font-size: 25px;
-    color: #b95c38;
     margin: 0px auto;
       padding: 25px 0px 25px 0px;
   
@@ -71,18 +69,24 @@ body {
   }
   h2 {
     /* text-align: center; */
-    font-size: 25px;
     
-    /* color: #ec3838; */
-
-  
+    font-size: 20px;
+    margin: 0 0;
   }
   h3 {
-    text-align: left;
-    font-size: 15px;
-    color: black;
-  
-  }
+    font-size: 25px;
+    color: #4d726f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+   
+    }
+    h4{
+      color:rgb(94, 97, 92);
+      font-size: 15px;
+      margin: 0 0;
+    }
+
+
   * {
     box-sizing: border-box;
   }
@@ -197,7 +201,7 @@ body {
     max-width: 600px;
     align-items: left;
     justify-content: left;
-    background-color: #b9c4c2;
+    background-color: #e5f3f0;
     padding: 20px 40px 0 40px;
     align-items: start; 
   }
@@ -205,18 +209,20 @@ body {
  .calculator_salary{
     grid-column: 1/2;
     grid-row: 1/2;
-    
-
+    margin: 0 auto;
+    margin-bottom: 25px;
     
  }
 .calculator_expenses{
    grid-column: 1/2;
    grid-row: 2/3;
+   margin-bottom: 25px;
 }
 .calculator_rate{
    grid-column: 1/2;
    grid-row: 3/4;
    text-align: right;
+   margin-bottom: 25px;
 }
 
 .input_salary{
@@ -243,20 +249,23 @@ body {
     row-gap: 25px;
     margin: 0 auto;
     max-width: 600px;
-    background-color: #c5d7e7;
-    padding: 10px 40px;
-     align-content: center; 
+    background-color: #dbeeff;
+    padding: 20px 40px 0 40px;
+    align-items: flex-start;
      
   }
   .calculator_Days{
     grid-column: 1/2;
     grid-row: 1/2;
     text-align: left;
+    margin: 0 auto;
+    
 }
 .calculator_Price{
     grid-column: 1/2;
     grid-row: 2/3;
     text-align: right;
+    margin-bottom: 25px;
 }
 
 .input_Days{

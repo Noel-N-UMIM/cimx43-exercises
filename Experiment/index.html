@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Spartan:wght@500&display=swap" rel="stylesheet"> </head>
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet"> 
 <body>
     <nav>
-        <!-- TODO have title name and menu in a row across from each other   -->
+      
 
         <div class="menu_container">
 
@@ -39,8 +39,6 @@
         <section>
             <div><a name="Home"></div>
             <br>
-            <!-- <h1 class="title">Welcome to<br>
-                An Animation Production Studio</h1> -->
             
             <!--------@@ Parallax Image Here ------->
             <div class="Hero_Image"><img src="https://i.postimg.cc/bNCjtcBk/atelier-banner.jpg">
@@ -50,7 +48,7 @@
                     <!-- <h2>A Simple Calculator to Quickly Price Your Work</h2> -->
                 </div>
             </div>
-            <div class="subtitle">A Simple Calculator to Quickly Price Your Work</div>
+            <div class="subtitle"><h3>A Simple Calculator to Price Your Work</h3></div>
             <div><a name="About"></div>
 
 
@@ -58,12 +56,12 @@
             <!-- @@Grid Area 2fr columns, 2fr rows: text on left, image on right, calculator underneath --> 
 
             <div class="Grid_2_Container">
-                <div class="calculator_salary"><strong><h2>Salary</h2></strong><br>Enter your desired annual salary:</div>
+                <div class="calculator_salary"><strong><h2>SALARY</h2></strong><br><h4>Enter your desired annual salary:</h4></div>
                 <br>
-                <div class="calculator_expenses"><strong><h2>Expenses (Yearly)</h2></strong><br>
-                Ex: software licenses, overhead cots, and materials.</div>
+                <div class="calculator_expenses"><strong><h2>EXPENSES (Yearly)</h2></strong><br>
+                <h4>Ex: software licenses, overhead cots, and materials.</h4></div>
                 <div class="calculator_rate">
-                    <h2> Day Rate </h2>
+                    <h3> DAY RATE </h3>
                 </div>
 
                 <div class="input_salary"><input id="salary" type="number" min="0" max="5000000" step="1000"
@@ -76,19 +74,19 @@
                 </div>
 
                 <div class="input_rate">
-                    <h2>
+                    <h3>
                         <div id="day_Rate"></div>
-                    </h2>
+                    </h3>
                 </div>
                 </div>
                 <!-- --------Days to Complete Project---- -->
                <div class = "Grid_3_Container">
-                <div class="calculator_Days"><strong><h2>Scope of Project</h2></strong><br>How many days will the project take to complete?</div>
-                <div class="calculator_Price"><h2><color #c42d2d>Project Cost</color></h2></div>
+                <div class="calculator_Days"><strong><h2>DAYS TO COMPLETE</h2></strong><br><h4>How many days will the project take to complete?</h4></div>
+                <div class="calculator_Price"><h3>PROJECT COST</h3></div>
                 
                 <div class="input_Days"><input id="days" type="number" min="1" max="2190" step="1" onchange="CalcDayRate()"></div>
         
-        <div class="input_Price"><h2 id="job_Price"></h2></div>
+        <div class="input_Price"><h3 id="job_Price"></h3></div>
             </div>
 </section>
 <section>
@@ -99,7 +97,7 @@
 
     <div class="StoryGrid">
         <div class="col1Story">
-            <h3>STUDIO STORY</h3>
+            <h2>STUDIO STORY</h2>
         </div>
         <div class="col1">
             Hello! My name is Yesnid E. Tlaw, and I am the founder of this studio, an animation and production
