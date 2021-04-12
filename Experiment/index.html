@@ -10,20 +10,23 @@
     <title>The Not-So-Starving Artist</title>
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Spartan:wght@500&display=swap" rel="stylesheet"> </head>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Spartan:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
 <body>
     <nav>
-      
+
 
         <div class="menu_container">
 
             <nav class="menu">
-                <div class="logo"><img src="https://i.postimg.cc/nLKPjfmz/Logo1.png"></div>
+                <div class="logo"><img src="https://i.postimg.cc/jdbfRCZW/Logo2.png"></div>
                 <a href="#Home">Home </a>
-                <a href="#About">About the Studio</a>
-                <a href="#Process">The Animation Process</a>
-                <a href="#Gallery">Studio Gallery</a>
+                <a href="#Calculator">Pricing Calculator</a>
+                <a href="#About">About</a>
+                <!-- <a href="#Gallery">Studio Gallery</a> -->
 
         </div>
 
@@ -39,8 +42,9 @@
         <section>
             <div><a name="Home"></div>
             <br>
-            
-            <!--------@@ Parallax Image Here ------->
+
+            <!--------@@ Hero Image Here ------->
+
             <div class="Hero_Image"><img src="https://i.postimg.cc/bNCjtcBk/atelier-banner.jpg">
                 <div class="centered">
                     <h1>The Not-So-Starving Artist</h1>
@@ -48,78 +52,108 @@
                     <!-- <h2>A Simple Calculator to Quickly Price Your Work</h2> -->
                 </div>
             </div>
-            <div class="subtitle"><h3>A Simple Calculator to Price Your Work</h3></div>
-            <div><a name="About"></div>
+            <div class="Title_mobile">
+                <h1>The Not-So-Starving Artist</h1>
+            </div>
+            <div><a name="Calculator"></div>
+            <div class="subtitle">
+                <h3>A Simple Calculator to Price Your Work</h3>
+            </div>
 
 
-        <section>
-            <!-- @@Grid Area 2fr columns, 2fr rows: text on left, image on right, calculator underneath --> 
 
-            <div class="Grid_2_Container">
-                <div class="calculator_salary"><strong><h2>SALARY</h2></strong><br><h4>Enter your desired annual salary:</h4></div>
-                <br>
-                <div class="calculator_expenses"><strong><h2>EXPENSES (Yearly)</h2></strong><br>
-                <h4>Ex: software licenses, overhead cots, and materials.</h4></div>
-                <div class="calculator_rate">
-                    <h3> DAY RATE </h3>
-                </div>
+            <section>
+                <!-- @@Grid Area 2fr columns, 2fr rows: text on left, image on right, calculator underneath -->
 
-                <div class="input_salary"><input id="salary" type="number" min="0" max="5000000" step="1000"
-                        onchange="CalcDayRate()">
-                </div>
+                <div class="Grid_2_Container">
+                    <div class="calculator_salary"><strong>
+                            <h2>SALARY</h2>
+                        </strong><br>
+                        <h4>Enter your desired annual salary.</h4>
+                    </div>
+                    <br>
+                    <div class="calculator_expenses"><strong>
+                            <h2>EXPENSES (Yearly)</h2>
+                        </strong><br>
+                        <h4>Ex: software licenses, overhead cots, and materials.</h4>
+                    </div>
+                    <div class="calculator_rate">
+                        <h3> DAY RATE </h3>
+                    </div>
+
+                    <div class="input_salary"><input id="salary" type="number" min="0" max="5000000" step="1000"
+                            onchange="CalcDayRate()">
+                    </div>
 
 
-                <div class="input_expenses">
-                    <input id="expenses" type="number" min="0" max="1000000" step="10" onchange="CalcDayRate()">
-                </div>
+                    <div class="input_expenses">
+                        <input id="expenses" type="number" min="0" max="1000000" step="10" onchange="CalcDayRate()">
+                    </div>
 
-                <div class="input_rate">
-                    <h3>
-                        <div id="day_Rate"></div>
-                    </h3>
-                </div>
+                    <div class="input_rate">
+                        <h3>
+                            <div id="day_Rate"></div>
+                        </h3>
+                    </div>
                 </div>
                 <!-- --------Days to Complete Project---- -->
-               <div class = "Grid_3_Container">
-                <div class="calculator_Days"><strong><h2>DAYS TO COMPLETE</h2></strong><br><h4>How many days will the project take to complete?</h4></div>
-                <div class="calculator_Price"><h3>PROJECT COST</h3></div>
-                
-                <div class="input_Days"><input id="days" type="number" min="1" max="2190" step="1" onchange="CalcDayRate()"></div>
-        
-        <div class="input_Price"><h3 id="job_Price"></h3></div>
-            </div>
-</section>
-<section>
-    
-    <div class="StoryImageGrid">
+                <div class="Grid_3_Container">
+                    <div class="calculator_Days"><strong>
+                            <h2>PROJECT TIMELINE</h2>
+                        </strong><br>
+                        <h4>How many days will the project take to complete?</h4>
+                    </div>
+                    <div class="calculator_Price">
+                        <h3>PROJECT COST</h3>
+                    </div>
 
-    </div>
+                    <div class="input_Days"><input id="days" type="number" min="1" max="2190" step="1"
+                            onchange="CalcDayRate()"></div>
 
-    <div class="StoryGrid">
-        <div class="col1Story">
-            <h2>STUDIO STORY</h2>
-        </div>
-        <div class="col1">
-            Hello! My name is Yesnid E. Tlaw, and I am the founder of this studio, an animation and production
-            brand. My team’s work typically incorporates traditional illustration, clean linework, computer
-            design, and bright colors. You can see our handiwork playing on most online streaming platforms and
-            on physical media as well as on our online shop. We also offer an extensive portfolio of characters
-            that are available for licensing.<p>
-        </div>
-        <div class="col2"><img src="https://i.postimg.cc/zGBcZypR/office-350x350.jpg"></div>
-    </div>
-</section>
+                    <div class="input_Price">
+                        <h3 id="job_Price"></h3>
+                    </div>
 
-        <div><a name="Process"></div>
-        <section>
-            <!--       <div class="parallax_1"></div> -->
+                </div>
+                <section>
+                    <div><a name="About"></div>
+                </section>
+                <br>
+                <br>
+            </section>
 
-            <div><a name="Gallery"></div>
+            <section>
+
+                <div class="StoryImageGrid">
+
+                </div>
+
+                <div class="StoryGrid">
+                    <div class="col1Story">
+
+                    </div>
+                    <div class="col1">
+
+                        <strong>"If you don’t know how much to charge for your creative skills, you’ve come to the right
+                            place.</strong>
+                        <p>
+                            The most straight forward way is to calculate the cost of your time, plus overheads, then
+                            multiply that by how long it will take you to complete the work. This animation and design
+                            price calculator is built to give artists a starting point and get you thinking about the
+                            practicalities of putting a price on your creative services.
+
+                            Simply enter your figures below to get started!" <a
+                                href="https://getwrightonit.com/how-much-should-i-charge-for-animation-and-design-work/">(Original
+                                Source)</a>
+                        <p>
+                    </div>
+                    <div class="col2"><img src="https://i.postimg.cc/zGBcZypR/office-350x350.jpg"></div>
+                </div>
+            </section>
+
             <br>
             <br>
-            <h2>
-                <p>Gallery of Our Studio</p>
-            </h2>
+
             <div class="StudioGallery1">
 
                 <div class="img1"><img src="https://i.postimg.cc/mDwG7F00/gallery-0001.jpg" alt=""></div>
@@ -129,24 +163,10 @@
                 <div class="img5"><img src="https://i.postimg.cc/25NpJwYs/gallery-0005.jpg" alt="">
                 </div>
             </div>
-            <section>
-                <div class="parallax_2"></div>
-                <div class="StudioGallery2">
-                    <div class="img4"><img src="https://i.postimg.cc/X7h6KWz7/gallery-0004.jpg" alt=""></div>
-                    <div class="img8"><img src="https://i.postimg.cc/J7pLnZ3X/gallery-0008.jpg" alt=""></div>
-                    <div class="img7"><img src="https://i.postimg.cc/TYhXW1Q4/gallery-0007.jpg" alt=""></div>
-                    <div class="img9"><img src="https://i.postimg.cc/NjHqpn38/gallery-0009.jpg" alt=""></div>
-            </section>
-            <!--         </div>
-            <div class="StudioGallery2"> -->
 
-    </div>
+            <footer>
 
-    </section>
-
-    <footer>
-
-    </footer>
+            </footer>
     </div>
     </main>
 
@@ -154,79 +174,3 @@
 </body>
 
 </html>
-<!-- <body>
-    
-    @@Hero Image should span across the full width
-    <div class = "Section_Banner"><br></div>
-    <div class="hero_container"> -->
-<!-- <img src="https://i.postimg.cc/MHGQSLrx/Hero-image-1000x350.png" alt="title_image"> -->
-<!-- <div class="centered">
-            <h1>The Non-Starving Artist</h1>
-            <h2>A Simple Guide to Pricing Your Work</h2>
-        </div>
-    </div>
-</div>
-    <div class="wrapper">
-        <div class="Grid_1">
-
-            <div class="text1">"dlgndjfdgdnglknslnslfbsljbjsblj vljv
-                <p> ljvlknlknlknlkdnglkdnfglndglndfglndflgn</p></div>
-            <div class="Image_1"><img src="https://i.postimg.cc/Wb5QTYX3/image-350x350.png"></div>
-        </div> -->
-
-
-
-
-<!-- @@Grid Area 2fr columns, 2fr rows: text on left, image on right, calculator underneath -->
-
-<!-- <br>
-    <div class="Grid_2_Container">
-        <div class="calculator_salary">Desired Annual Salary:</div>
-        <div class="calculator_expenses">Annual Expenses:</div>
-        <div class="calculator_rate">
-            <h2> Day Rate = $</h2>
-        </div>
-
-        <div class="input_salary"><input id="salary" type="number" min="0" max="5000000" step="1000"
-                onchange="CalcDayRate()">
-        </div>
-
-
-        <div class="input_expenses">
-            <input id="expenses" type="number" min="0" max="1000000" step="10" onchange="CalcDayRate()">
-        </div>
-
-        <div class="input_rate">
-            <h2>
-                <div id="day_Rate"></div>
-            </h2>
-        </div>
-    </div>
-
-    <p>
-        Days to Complete Work: <input id="days" type="number" min="1" max="2190" step="1" onchange="CalcJobPrice()">
-    </p>
-    <h2 id="job_Price"></h2>
-
-    <p>
-        LoanAmount: $<input id="amount" type="number" min="1" max="1000000" onchange="computeLoan()" />
-    </p>
-    <p>
-        Interest Rate:
-        <input id="interest_rate" type="number" min="0" max="100" value="10" step=".1" onchange="computeLoan()" />
-    </p>
-    <p>
-        Months:
-        <input id="months" type="number" min="1" max="72" value="1" step="1" onchange="computeLoan()" />
-    </p>
-    <h2 id="payment"></h2>
-
-
-    </div>
-    
-
-
-    <script src="JS/Calculator.js"></script>
-</body>
-
-</html> -->
