@@ -4,24 +4,30 @@ function CalcDayRate(){
     
     let salary = parseFloat(0)+document.getElementById('salary').value;
     let expenses = parseFloat(0)+document.getElementById('expenses').value;
-    
-    
-    let a = parseFloat(salary)+parseFloat(expenses);
+    let premium = parseFloat(0)+document.getElementById("premium").value;//this is the slider input
+    let TimePremium=parseFloat(1)+(premium/100);//this converts the slider number to a fraction
+    let a = parseFloat(salary)+parseFloat(expenses);//this adds the salary and the expenses
     let dayRate=(a/260).toFixed(2);
-    dayRate = dayRate.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    //this adds a comma for the thousands, between every 3 digits in the string//
-    document.getElementById('day_Rate').innerHTML = "= $"+""+ dayRate;
+    dayRate = dayRate.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");//this adds a comma for the thousands, between every 3 digits in the string//
+    document.getElementById('day_Rate').innerHTML = "= $"+""+ dayRate; //this is the Day Rate that is displayed on the screen
+    //These are used to calculate the final project costs
     let days = parseFloat(0)+document.getElementById('days').value;
+    let FinalDays = days*TimePremium;
    
-//    -------Pricing the Job-------
-    let jobPrice=(days*dayRate).toFixed(2);
+//    -------Pricing the Final Job-------
+    let jobPrice=(FinalDays*dayRate).toFixed(2);
     jobPrice = jobPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     document.getElementById('job_Price').innerHTML= "= $"+""+ jobPrice;
 
-    // if (document.getElementById('day_Rate').innerHTML == NaN){
-    //     document.getElementById('day_Rate').innerHTML=0;
-    // }
 }
+// ----------Slider----------------
+let slider = document.getElementById("premium");
+    let output = document.getElementById("Output_premium");
+    output.innerHTML = slider.value;
+
+    slider.oninput=function(){
+        output.innerHTML=this.value;
+    }
 
 function CalcJobPrice(){
 

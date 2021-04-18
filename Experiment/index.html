@@ -77,6 +77,7 @@
                         </strong><br>
                         <h4>Ex: software licenses, overhead costs, and materials.</h4>
                     </div>
+
                     <div class="calculator_rate">
                         <h3> DAY RATE </h3>
                     </div>
@@ -89,6 +90,7 @@
                     <div class="input_expenses">
                         <input id="expenses" type="number" min="0" max="1000000" step="10" onchange="CalcDayRate()">
                     </div>
+
 
                     <div class="input_rate">
                         <h3>
@@ -103,6 +105,12 @@
                         </strong><br>
                         <h4>How many days will the project take to complete?</h4>
                     </div>
+                    <div class="calculator_TimePremium"><strong>
+                            <h2>TIME BUFFER</h2>
+                        </strong><br>
+                        <h4>Projects often take longer than expected to finish. Add a buffer of extra time (usually 25%).</h4>
+                    </div>
+
                     <div class="calculator_Price">
                         <h3>PROJECT COST</h3>
                     </div>
@@ -110,6 +118,12 @@
                     <div class="input_Days"><input id="days" type="number" min="1" max="2190" step="1"
                             onchange="CalcDayRate()"></div>
 
+                    <div class="TimePremiumWrapper"><div class="input_TimePremium">
+                        <!-- <span class = "inline%"></span>--><span id="Output_premium"></span>%</span><input
+                            id="premium" input type="range" min="0" max="100" value="0" class="slider" onchange="CalcDayRate()">
+
+                    </div>
+                    </div>
                     <div class="input_Price">
                         <h3 id="job_Price"></h3>
                     </div>
