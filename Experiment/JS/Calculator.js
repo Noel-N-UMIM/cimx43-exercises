@@ -8,7 +8,7 @@ function CalcDayRate(){
     let TimePremium=parseFloat(1)+(premium/100);//this converts the slider number to a fraction
     let a = parseFloat(salary)+parseFloat(expenses);//this adds the salary and the expenses
     let dayRate=(a/260).toFixed(2);
-    dayRate = dayRate.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");//this adds a comma for the thousands, between every 3 digits in the string//
+    // dayRate = dayRate.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");//Seems to be limiting the output to $1000, this adds a comma for the thousands, between every 3 digits in the string//
     document.getElementById('day_Rate').innerHTML = "= $"+""+ dayRate; //this is the Day Rate that is displayed on the screen
     //These are used to calculate the final project costs
     let days = parseFloat(0)+document.getElementById('days').value;
