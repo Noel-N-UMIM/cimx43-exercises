@@ -1,0 +1,30 @@
+1).	What were you trying to accomplish? What was the tutorial or inspiration you tried to work with?
+My goal was to create a calculator to help artists and freelancers determine a fair price for their services.  Figuring out how much one’s time is worth can be a nebulous exercise, but there are logical data points that can be used to find an accurate estimation of pay.  
+
+It just so happens that I found a website that accomplished the *exact* vision that I had! 
+The inspiration is found here : https://getwrightonit.com/how-much-should-i-charge-for-animation-and-design-work/
+I didn’t copy the mathematical formulas, html, css, or JavaScript directly from the site, instead I searched online to get a better understanding of how to create input forms and sliders.
+
+Links to tutorials:
+
+*Mortgage Calculator, this was one of the most important tutorials: https://www.youtube.com/watch?v=vkBiEuZSq9s
+
+* Range slider: https://www.w3schools.com/howto/howto_js_rangeslider.asp
+
+* Tip Calculator: https://www.youtube.com/watch?v=l1T0YH0qt-c
+
+* HTML Text over image Tut: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text
+
+
+2).	What was the most frustrating part of working on this exercise? The most rewarding?
+The most frustrating part of this exercise was getting the JavaScript functions to work correctly.  In addition, once an input was created by the user, the output would display “NaN” since the other inputs had not yet been entered by the user.  I was able to come up with a solution which was to add an initial number of “0” to every input regardless of the user’s input. 
+
+The most rewarding part was solving the frustrating parts! What a relief when everything worked.  I think there can be great and functional uses with JavaScript that I hope to explore further.
+
+
+3).	Would you do this exercise again?
+Yes, I think I would especially since I know that it will work.
+
+
+4).	What would you change if you had another week?
+There are still some bugs that need to be worked out.  For example, it seems my “Day Rate” is limited to $1000 per day and I haven’t figured out why…yet.
