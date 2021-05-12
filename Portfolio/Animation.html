@@ -12,10 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@600;700&family=Sen:wght@700&family=Montserrat:wght@800&family=Poppins:wght@400;500&display=swap&family=Alice&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <img class="img-banner" src="img/banner.png" alt= "Noel Nunez Art and Interactive Media">
-    <div class="wrapper">
-        <h1>Animation</h1>
+    <nav>
+        <div class="menu_container">
 
+          <nav class="menu">
+              <!-- <div class="logo"><img src="https://i.postimg.cc/jdbfRCZW/Logo2.png"></div> -->
+              <a href="#Home">Home</a>
+              <a href="#Storyboards">Storyboards</a>
+              <a href="#Animation">Animation</a>
+              <a href="#InteractiveMedia">Interactive Media</a>
+              <a href="#About">About</a>
+              <a href="#Contact">Contact</a>
+      </div>
+  </nav>
+    <img class="img-banner" src="img/banner.png" alt= "Noel Nunez Art and Interactive Media">
+    <div class="banner-animation">
+        <h1>Animation</h1>
+        <div class ="overlay"></div>
+    </div>
+    <div class="wrapper">
         <div class = "StoryboardGrid">
             <h2>Hand Drawn Animation</h2>
             <h3>Toon Boom | After Effects | Premiere | Photoshop</h3>
@@ -56,6 +71,19 @@
     
         </div> -->
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop()>1.5){
+                $(".banner-animation h1").css({"opacity" :"0"})
+            }
+            else {
+                $(".banner-animation h1").css({"opacity" :"1"})
+            }
+        })
+    })
+    </script>
 </body>
 <footer>
     <p>(C) Noel Nuñez</p></footer>

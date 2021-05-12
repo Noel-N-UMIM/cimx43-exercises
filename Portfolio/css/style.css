@@ -93,15 +93,41 @@ a:visited {
   flex-direction: column;
   overflow: hidden;
   box-sizing: border-box;
-  
-  
-
 }
+.banner-animation{
+  position: relative;
+  margin: 0;
+  width:100%;
+  background-image:url("../img/AnimationHeroImage.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+   -webkit-background-size:cover;  
+  background-size: cover;
+  background-position: center center;
+  height:500px;
+  opacity: 1;
+  text-align: center;
+  font-size:120px;
+  font-weight:bold;
+  margin: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
 .banner h1{
  position: fixed;
   transition: .5s;
   z-index: 1;
 }
+.banner-animation h1{
+  position: fixed;
+   transition: .5s;
+   z-index: 1;
+ }
 .overlay{
 
   position: absolute;
