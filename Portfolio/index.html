@@ -1,104 +1,207 @@
-<!-- https://speakerdeck.com/ to host storyboards -->
-<!-- https://iframely.com/ for embedding storyboards -->
-<!-- https://www.youtube.com/watch?v=TjBDjw0cZVo text hide -->
-<!-- https://www.youtube.com/watch?v=BkbkUtrLkls How to make a fixed navigation bar using html and css | Collapsing Header Tutorial -->
+<!--https://www.youtube.com/watch?v=oU3IhuZscPo -------  Teaches how to add background image   -->
+<!-- https://cssgrid-generator.netlify.app/ ---------------GRid Generator---------------->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noel Nunez Art and Interactive Media</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@600;700&family=Sen:wght@700&family=Montserrat:wght@800&family=Poppins:wght@400;500&display=swap&family=Alice&display=swap" rel="stylesheet"> 
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style_home.css">
+   
+ <title>Noel Nunez Art and Animation</title>
 </head>
-<body>
-    <nav>
-        <div class="menu_container">
 
-          <nav class="menu">
-            
-            
-                <div class="logo"><img src="img/logo.png"></div> 
-              <a href="index.html">Storyboards</a>
-              <a href="Animation.html">Animation</a>
-              <a href="About.html">About</a>
-              
-      </div>
-          </nav>
+<header>
+    <nav>
+        <!-- -------Small Nav Menu start--------------->
+        <div class="menu-small">
+        <div class="navContainer">
+        <div class="navbar">
+            <div class="logo"><a href="#home"><img src="img/logo.png"></a></div>
+            <div class="dropdown">
+                <button class="dropbtn">Portfolio
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                 <!-- <a href="Animation.html">Art</a>-->
+                <a href="interaction.html">Interaction Design</a>
+                <a href="storyboard.html">Storyboards</a>
+                <a href="animation.html">Animation</a>
+                <!--<a href="index.html">UI/UX</a>-->
+                <!--<a href="index.html">Interactive Media</a>-->
+                </div>
+              </div> 
+            <a href="#about">About</a>
+            <a href="https://interactivedesigndevelopment.blogspot.com/">Blog</a>
+
+          </div>
+        </div>
     </div>
+    <!-- -------Small Nav Menu End--------------->
+    <!-- -------Large Nav Menu Start--------------->
+    <div class="menu-large">
+        <div class="navContainer">
+        <div class="navbar">
+            <div class="logo"><a href="#home"><img src="img/logo.png"></a></div>
+              <a href="interaction.html">Interaction Design</a>
+              <a href="storyboard.html">Storyboards</a>
+              <a href="animation.html">Animation</a>
+              <a href="#about">About</a>
+            <a href="https://interactivedesigndevelopment.blogspot.com/">Blog</a>
+
+          </div>
+        </div>
+    </div>
+    <!-- -------Large Nav Menu End--------------->
+          </nav>
+    
+</div>
     
     <div class="logo_container">
             
     </div>
 </nav>
-       <!--    -----------Parallax Title and BG Image Goes Here---------- -->
-      <header>
- <br>
-  <div class="banner">
-      <h1>Storyboards</h1>
-      <div class ="overlay"></div>
-  </div>
-  </header>
-         
-  
-    <div class="wrapper">
-        <div class="inner_shield">
-            <h2>Amelia Armadillo</h2>
-            <h3>A fearful young armadillo gets help from an unexpected mentor.</h3>
-            <!-- Embed Boards Here -->
+<div id="home"></div>
+     <div class="banner-about">
+         <h1>Noel Nuñez</h1><br>
+         <h2>Interaction Designer<br>
+            Story Artist & Animator</h2>
+         <div class ="overlay"></div>
+     </div>
+     </header>
+<body>
 
-            <div class="mediaWrapper"><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 64.6479%;"><iframe src="https://speakerdeck.com/player/ac296df655f44419bfc35c43a9230620?slide=1" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
-            <div class="tools"><p><h3>
-                Tools Used: ToonBoom | Photoshop | Pencil and Paper!
-            </h3></p><div class="tools"></div></div></div>
+    <div class="wrapper">    
+<div class="container">
+
+   <!--  <h1 class="heading">Work</h1>-->
+
+    <div class="box-container">
+
+            <!-- <div class="box">
+            <img src="img/image_350x350.png" alt="">
+                <h3>Art</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>-->
+            <!--<a href="#" class="btn">Art</a>-->
+        <!--</div>-->
+
+        <!-- <div class="box">
+            <img src="img/image_350x350.png" alt="">
+                <h3>Animation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>-->
+           <!-- <a href="#" class="btn">read more</a>-->
+        <!--</div>-->
         
-        
-            <h2>An EPICALLY Tiny Tale</h2>
-            
-            <div><h3>Video Animatic</h3></div>
-         
-            <!-- Embed Video Here -->
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/477222364?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            <div><h2>Board Panels</h2></div>
-            <!-- Embed Boards Here -->
-            <div class="mediaWrapper"><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 64.6479%;"><iframe src="https://speakerdeck.com/player/75bf6fbe642240bb8edfe8fb58a899b8?slide=1" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
-        <!-- </div> -->
-            <p>
-                <div class="tools"><h3>Tools Used: ToonBoom | Photoshop | Premiere | Pencil and Paper!</h3></div>
+
+        <div class="box">
+            <img src="img/Interaction_thumb.PNG" alt="Interaction Design">
+                <a href="interaction.html">
+                    <div class="content">
+                        <h3>Interaction<br>Design</h3>
+                        
+                        </a>
+             <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>-->
             </div>
-            </p>
+           <!-- <a href="#" class="btn">read more</a>-->
+  </div>
+
+        <div class="box">
+            <img src="img/SB_Thumb.PNG" alt="Storyboards">
+            <a href="storyboard.html">
+            <div class="content">
+            
+                <h3>Storyboards</h3>
+            </a>
+            <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>-->
+            <!--<a href="#" class="btn">read more</a>-->
+        </div>
+
+        </div>
+        <div class="box">
+            <img src="img/Animation_thumb.PNG" alt="Animation">
+                <a href="animation.html">
+                    <div class="content">
+                        <h3>Animation</h3>
+                        
+                        </a>
+             <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>-->
+            </div>
+            </div>
+           
         
-        
-            <h2>The Credits Movie</h2>
-            <h3>Short Film | Side-by-Side Comparison</h3>
-            <!-- Embed Video Here -->
-            <div style="padding:28.13% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/503988287?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-       
-           <p>
-                <h3>Tools Used: ToonBoom | Photoshop | Premiere | Maya | After Effects</h3>
-            </p>
-            <div class="tools"><p><h4>Directed by: Jeffrey Ashkin
-                <br>
-                Storyboards | Rigging | Animation | Compositing by: Noel Nuñez</h4>
-            </p></div>
+
+        <!--<div class="box">
+            <img src="img/image_350x350.png" alt="">
+            <h3>UI/UX & Web</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>-->
+           <!--<a href="#" class="btn">read more</a>-->
+       <!-- </div>-->
+
+        <!--<div class="box">
+            <img src="img/image_350x350.png" alt="">
+            <h3>Interactive Media Projects</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>-->
+           <!-- <a href="#" class="btn">read more</a>-->
+        <!--</div>-->
+
+    </div>
+    <br>
+    <div id="about"></div>
+<br>
+    <div class= "section_About">
+        <div class="inner_shield">
+            
+            <h5>About</h5>
+            <div class="parent-about">
+                <div class="div1"><h4><p></p>
+                
+                    <em><h6>"My goal is to tell captivating stories <br>and to create meaningful real world experiences<br> through interactive media."</h6></em><br>
+                
+                   <p>Hello, I'm Noel Nuñez,
+                    an artist, storyteller, and perpetual student.</p>
+                     
+                    <p>My love for art is rooted in animation and I'm currently pursuing a master’s degree in Interactive Media.</p></h4>
+                                        
+                    <h4><p>In this portfolio you’ll find coding experiments, team projects, user experience concepts, animation, storyboards, and development art.
+                        If you would like to learn more, please feel free to connect through <a href="https://www.linkedin.com/in/noel-n-58a81bb/"><b>LinkedIn.</b></a></p>
+                    </h4> 
+                   
+                </div>
+                <div class="div2"><img src="img/About_Me_Profile2.png"> </div>
+                </div> 
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $(window).scroll(function(){
-            if($(this).scrollTop()>1.5){
-                $(".banner h1").css({"opacity" :"0"})
-            }
-            else {
-                $(".banner h1").css({"opacity" :"1"})
-            }
-        })
-    })
-    </script>
+                <div class= "section_About">
+                <h5>Software Proficiency</h5>
+                <br>
+                <p><center>Adobe Photoshop | XD | Illustrator | Premiere | AfterEffects
+                    <br>
+                Autodesk Maya | ToonBoom Harmony
+                <br>
+                Unity | C# | HTML | CSS</center></p> 
+         </div>
+    </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$(window).scroll(function(){
+    if($(this).scrollTop()>1.5){
+        $(".banner-about h1").css({"opacity" :"0"})
+    }
+    else {
+        $(".banner-about h1").css({"opacity" :"1"})
+    }
+})
+})
+
+
+</script>
+
 </body>
 <footer>
-    <p>(C) Noel Nuñez</p></footer>
+    <p>(C) Noel Nuñez 2024</p></footer>
 </html>
