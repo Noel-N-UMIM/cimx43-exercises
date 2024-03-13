@@ -1,0 +1,460 @@
+/* fonts:     
+font-family: 'Josefin Sans', sans-serif;
+
+font-family: 'Montserrat', sans-serif;
+
+font-family: 'Poppins', sans-serif; 
+font-family: 'Alice', serif;
+font-family: 'Sen', sans-serif;
+font-family: 'Alata', sans-serif;
+*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  background-color: rgb(252, 252, 252);
+  width:100%;
+  /* margin: 0 auto; */
+  }
+
+.wrapper{
+  
+  /* width:100%;  This was messing everything up!!!  don't do it again. */
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(252, 252, 252);
+  position: relative; 
+  z-index: 2;
+ 
+ 
+  /* overflow: auto; */
+}
+.inner_shield{
+   padding:0 40px;
+  margin: 0 auto;
+}
+ /* .wrapper { grid-area: 1 / 2 / 2 / 3; } */ 
+
+.mediaWrapper{
+  padding: 20px 0 0 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(24, 24, 24);
+  font-family: 'Alata', sans-serif;
+  font-size: 18px;
+  padding: 0 30px;
+  z-index: 13;
+}
+a:visited {
+  color: rgb(0, 0, 0);
+}
+nav a:hover {
+  color: rgb(35, 100, 126);
+  /*@@ hover must come after visited and link */
+}
+a:active{
+  color: rgb(99, 99, 99);
+  /* font-weight:bolder; */
+  /* @@note the active tag must come after the hover tag */
+}
+
+
+.menu_container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  min-height: 75px;
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  margin: auto;
+
+}
+.menu {
+  margin-left: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+}
+.logo_container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 100%;
+  height: auto;
+  min-height: 75px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  margin: auto;
+  background-color: rgb(252, 252, 252);
+  filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.26));
+
+}
+.logo img{
+max-height: 75px;
+margin-left:40px;
+display: inline-block;
+
+}
+.banner{
+  position: relative;
+  margin: 0;
+  width:100%;
+  background-image:url("../img/Storyboard_Cover2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+   -webkit-background-size:cover;  
+  background-size: cover;
+  background-position: center center;
+  height:500px;
+  opacity: 1;
+  text-align: center;
+  font-size:120px;
+  font-weight:bold;
+  margin: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.banner-animation{
+  position: relative;
+  margin: 0;
+  width:100%;
+  background-image:url("../img/AnimationHeroImage.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+   -webkit-background-size:cover;  
+  background-size: cover;
+  background-position: center center;
+  height:500px;
+  opacity: 1;
+  text-align: center;
+  font-size:120px;
+  font-weight:bold;
+  margin: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.banner-about{
+  position: relative;
+  margin: 0;
+  width:100%;
+  background-image:url("../img/About_Image_personal.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+   -webkit-background-size:cover;  
+  background-size: cover;
+  background-position: left center;
+  height:500px;
+  opacity: 1;
+  text-align: center;
+  font-size:120px;
+  font-weight:bold;
+  margin: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.banner h1{
+ position: fixed;
+  transition: .5s;
+  z-index: 1;
+}
+.banner-animation h1{
+  position: fixed;
+   transition: .5s;
+   z-index: 1;
+ }
+ .banner-about h1{
+  position: fixed;
+   transition: .5s;
+   z-index: 1;
+ }
+ .banner-about h2{
+   margin:100px 0 0 0;
+  position: fixed;
+   transition: .5s;
+   z-index: 1;
+ }
+.overlay{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f8f8f867;
+}
+
+h1{
+
+  font-family: 'Alata', sans-serif;
+
+  font-size: 60px;
+  color:rgb(35, 100, 126);
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+h2{
+
+  font-family: 'Alata', sans-serif;
+
+  font-size: 32px;
+  color:rgb(34, 34, 34);
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color:rgb(110, 110, 110);
+  text-align: center;
+  padding:10px 0 10px 0;
+}
+h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color:rgb(0, 0, 0);
+  padding: 10px 0 20px 0;
+}
+.Breakdown {
+  margin: 0 auto;
+  padding: 40px;
+}
+.tools h3{
+  text-align: left;
+}
+
+.tools h4{
+  text-align: left;
+}
+
+.parent {
+      width:100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+      grid-column-gap: 20px;
+      grid-row-gap: 0px;
+      
+      }
+      
+      .div1 { grid-area: 1 / 1 / 2 / 2; }
+      .div2 { grid-area: 1 / 2 / 2 / 3; }
+      .div3 { grid-area: 2 / 1 / 3 / 2; }
+      .div4 { grid-area: 2 / 2 / 3 / 3; }
+      .div5 { grid-area: 3 / 1 / 4 / 2; }
+      .div6 { grid-area: 3 / 2 / 4 / 3; } 
+
+.div1 {
+  padding:20px 0;
+}
+.div2 {
+  padding:20px 0;
+}
+.parent-about{
+  display: grid;
+  width:100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 0px;
+  }
+  
+  .parent-about .div1 { grid-area: 1 / 1 / 2 / 3; 
+  width:100%;
+  margin: 0 auto;
+}
+  .parent-about .div2 { grid-area: 1 / 3 / 2 / 4;
+    width: 100%;
+    margin: 0 auto;
+    
+   }
+  .parent-about img {
+  max-height:600px; 
+  }
+  .parent-about p{
+    margin:20px 0 20px 0;
+    }
+
+footer{
+  background-color: black;
+  color:white;
+ line-height: 100px;
+  width:100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 50px;
+}
+
+  /* --------Media Queries ------- */
+ @media only screen and (max-width: 768px) {
+  .wrapper{
+    padding: 0 0;
+  }  
+  h1{
+      font-size: 50px;
+    }
+    h2{
+      font-size: 20px;
+    }
+    h3{
+      font-size: 18px;
+    }
+    h4{
+      font-size: 16px; 
+    }
+    .banner{  
+      height:200px;
+    }
+    .banner-animation{
+      height:200px;
+    }
+    .banner-about{
+      height:200px;
+    }
+    .wrapper{
+      max-width: 700px;
+    }
+    .inner_shield{
+      padding:0 20px;
+
+   }
+    
+    .parent-about img {
+      max-height:400px; 
+      }
+      .parent {
+        width:100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        height: auto;
+       
+
+        
+        }
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 4 / 1 / 5 / 2; }
+        .div3 { grid-area: 2 / 1 / 3 / 2; }
+        .div4 { grid-area: 5 / 1 / 6 / 2; }
+        .div5 { grid-area: 3 / 1 / 4 / 2; }
+        .div6 { grid-area: 6 / 1 / 7 / 2; } 
+
+    footer{
+      line-height: 75px;
+    }
+ }
+
+  @media only screen and (max-width: 579px) {
+    a:link {
+      text-decoration: none;
+      color: rgb(24, 24, 24);
+      font-family: 'Alata', sans-serif;
+      font-size: 18px;
+      padding: 0 18px;
+      z-index: 13;
+    }
+    .menu {
+      justify-content: center;
+    }
+    h3{
+      font-size: 15px;
+    }
+    h4{
+      font-size: 15px;
+    }
+.wrapper{
+  /* max-width: 360px; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.banner-animation{
+  height: 100px;
+}
+.banner{  
+  height:100px;
+}
+.banner-about{
+  height:100px;
+}
+.Breakdown{
+  padding: 10px 40px 0 40px;
+}
+.parent .div1{
+  padding: 0 0 20px 0;
+}
+.parent-about{
+width:100%;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px; 
+}
+
+.parent-about .div1 { grid-area: 1 / 1 / 2 / 2; 
+  margin: 0 auto;
+  padding: 0;
+} 
+.parent-about .div2 {
+  display: none;
+}
+.inner_shield{
+  padding:0 10px;
+
+}
+.logo img{
+  display: none;
+}
+  }
+
+  
+   
+
+
+
+
+
+
+
+
+
+
+ 
