@@ -177,8 +177,8 @@
   
   /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
   @media screen and (max-width: 1000px) {
-    .column-66,
-    .column-33 {
+    .column-right,
+    .column-left {
       width: 100%;
       text-align: center;
     }
