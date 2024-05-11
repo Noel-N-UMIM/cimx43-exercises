@@ -922,6 +922,9 @@ max-width: 1000px;
 
  /*-------------------------Collapsed State------------------------*/
  @media only screen and (max-width: 1000px) {
+  .center {
+    width: 100%;
+  }
   .menu-small{
     display: contents;
     }
@@ -1019,4 +1022,9 @@ box-shadow: none;
     .div4 { grid-area: 5 / 1 / 6 / 2; }
     .div5 { grid-area: 3 / 1 / 4 / 2; }
     .div6 { grid-area: 6 / 1 / 7 / 2; } 
+  }
+  @media only screen and (max-width: 300px) {
+    .center {
+      width: 100%;
+    }
   }
